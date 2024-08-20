@@ -1,5 +1,5 @@
 # 42-minitalk
-Simple client-server communication program.
-
-
-After starting the server executable, run the client executable with an argument message: the server will then display that message in the terminal.
+Simple IPC program using UNIX signals. To try it out, first compile the executables using `make`, then start the server (`./server`) and - in a new terminal, - run a client as follows:
+```bash
+./client [SERVER PID] [MESSAGE]
+``` 
