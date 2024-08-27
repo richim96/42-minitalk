@@ -12,7 +12,7 @@
 
 #include "minitalk.h"
 
-int	g_request_processed = 0;
+volatile sig_atomic_t	g_request_processed = 0;
 
 void	ft_request_status(int sig, siginfo_t *info, void *context)
 {
